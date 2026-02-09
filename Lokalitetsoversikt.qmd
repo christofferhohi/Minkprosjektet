@@ -8,14 +8,13 @@ editor: visual
 
 ## Kart
 
-Aktuelle koloniar er punktmarkert i kartet.
+Aktuelle koloniar er punktmarkert i kartet. Trykk på eit punkt for å få opp informasjon om lokalitetsnavn, koloninavn og vernestatus.
 
 ```{r, echo=F, warning=F, message=F}
 library(tidyverse)
 library(readxl)
 library(leaflet)
 library(sf)
-
 library(httr)
 library(xml2)
 
