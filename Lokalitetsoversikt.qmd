@@ -51,7 +51,7 @@ leaflet(lok) %>%
   addWMSTiles(
     baseUrl = "https://wms.geonorge.no/skwms1/wms.topo",
     layers  = chosen_layer,
-    group   = "Kartverket topo (WMS)",
+    group   = "Norgeskart",
     options = WMSTileOptions(
       format = "image/png",
       transparent = FALSE
@@ -75,7 +75,7 @@ leaflet(lok) %>%
   # --- Layer control ---
   addLayersControl(
     baseGroups = c(
-      "Kartverket topo (default)",
+      "Norgeskart (default)",
       "OSM",
       "Satellite"
     ),
