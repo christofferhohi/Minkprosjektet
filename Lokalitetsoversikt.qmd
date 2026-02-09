@@ -1,0 +1,95 @@
+---
+title: "Lokalitetsoversikt Minkprosjektet"
+format:
+  html:
+    self-contained: true
+editor: visual
+---
+
+## Kart
+
+Aktuelle koloniar er punktmarkert i kartet.
+
+```{r, echo=F, warning=F, message=F}
+library(tidyverse)
+library(readxl)
+library(leaflet)
+library(sf)
+
+library(httr)
+library(xml2)
+
+cap_url <- "https://wms.geonorge.no/skwms1/wms.topo?service=wms&request=getcapabilities"
+
+xml_txt <- httr::GET(cap_url) |>
+  httr::stop_for_status() |>
+  httr::content(as = "text", encoding = "UTF-8")
+
+doc <- read_xml(xml_txt)
+
+# Namespace-agnostic layer name extraction
+layers <- unique(xml_text(xml_find_all(doc, "//*[local-name()='Layer']/*[local-name()='Name']")))
+layers <- layers[!is.na(layers) & nzchar(layers)]
+
+
+library(leaflet)
+
+chosen_layer <- layers[1]  # replace after you inspect
+
+lok <- read_excel("Lokalitetar.xlsx") %>% 
+  separate(Koordinater, into = c("lat", "lon"), sep = ",") %>% 
+   mutate(
+    lat = as.numeric(lat),
+    lon = as.numeric(lon)
+  )
+
+leaflet(lok) %>%
+  # --- Base maps ---
+  addTiles(group = "OSM (default)") %>%   # OpenStreetMap
+  addProviderTiles("Esri.WorldImagery", group = "Satellite") %>%
+
+  # Kartverket WMS
+  addWMSTiles(
+    baseUrl = "https://wms.geonorge.no/skwms1/wms.topo",
+    layers  = chosen_layer,
+    group   = "Kartverket topo (WMS)",
+    options = WMSTileOptions(
+      format = "image/png",
+      transparent = FALSE
+    ),
+    attribution = "© Kartverket / Geonorge"
+  ) %>%
+
+  # --- Points ---
+  addCircleMarkers(
+    lng = ~lon,
+    lat = ~lat,
+    radius = 6,
+    fillOpacity = 0.8,
+    popup = ~paste0(
+      "<b>Lokalitet:</b> ", Lokalitet, "<br>",
+      "<b>Koloni:</b> ", Koloni, "<br>",
+      "<b>Vern:</b> ", Vernet
+    )
+  ) %>%
+
+  # --- Layer control ---
+  addLayersControl(
+    baseGroups = c(
+      "Kartverket topo (WMS)",
+      "OSM (default)",
+      "Satellite"
+    ),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```
+
+## Tabell
+
+```{r, echo=F, warning=F, message=F}
+library(kableExtra)
+
+lok %>% 
+  select(2:4) %>% 
+  kable()
+```
