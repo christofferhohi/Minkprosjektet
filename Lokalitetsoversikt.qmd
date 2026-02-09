@@ -44,7 +44,7 @@ lok <- read_excel("Lokalitetar.xlsx") %>%
 
 leaflet(lok) %>%
   # --- Base maps ---
-  addTiles(group = "OSM (default)") %>%   # OpenStreetMap
+  addTiles(group = "OSM") %>%   # OpenStreetMap
   addProviderTiles("Esri.WorldImagery", group = "Satellite") %>%
 
   # Kartverket WMS
