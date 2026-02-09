@@ -1,5 +1,5 @@
 ---
-title: "Lokalitetsoversikt Minkprosjektet"
+title: "Minkprosjektet"
 format:
   html:
     self-contained: true
@@ -76,8 +76,8 @@ leaflet(lok) %>%
   # --- Layer control ---
   addLayersControl(
     baseGroups = c(
-      "Kartverket topo (WMS)",
-      "OSM (default)",
+      "Kartverket topo (default)",
+      "OSM",
       "Satellite"
     ),
     options = layersControlOptions(collapsed = FALSE)
