@@ -56,6 +56,11 @@ lok <- read_excel("Lokalitetarv2.xlsx") %>%
     lon = as.numeric(lon)
   )
 
+pal <- colorFactor(
+  palette = c("red", "blue", "green"), 
+  domain = lok$`Inkludert i eksperiment?`
+)
+
 leaflet(lok) %>%
   # --- Base maps ---
   addTiles(group = "OSM") %>%   # OpenStreetMap
@@ -77,7 +82,10 @@ leaflet(lok) %>%
   addCircleMarkers(
     lng = ~lon,
     lat = ~lat,
+    #group = ~`Inkludert i eksperiment?`
     radius = 6,
+    fillColor = ~pal(`Inkludert i eksperiment?`),
+    color = ~pal(`Inkludert i eksperiment?`),
     fillOpacity = 0.8,
     popup = ~paste0(
       "<b>Lokalitet:</b> ", Lokalitet, "<br>",
