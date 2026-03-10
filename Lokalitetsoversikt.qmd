@@ -31,6 +31,7 @@ library(leaflet.extras)
 library(sf)
 library(httr)
 library(xml2)
+library(kableExtra)
 
 
 ### Download Norgeskart layers
@@ -46,9 +47,6 @@ doc <- read_xml(xml_txt)
 layers <- unique(xml_text(xml_find_all(doc, "//*[local-name()='Layer']/*[local-name()='Name']")))
 layers <- layers[!is.na(layers) & nzchar(layers)]
 
-
-library(leaflet)
-
 chosen_layer <- layers[1]  # topo layer
 
 lok <- read_excel("Lokalitetarv2.xlsx") %>% 
@@ -60,10 +58,10 @@ lok <- read_excel("Lokalitetarv2.xlsx") %>%
 
 
 lok$pt_col <- dplyr::case_when(
-  trimws(lok$`Inkludert i eksperiment?`) == "Nei" ~ "red",
-  trimws(lok$`Inkludert i eksperiment?`) == "Usikker" ~ "yellow",
-  trimws(lok$`Inkludert i eksperiment?`) == "Overvåking" ~ "blue",
-  trimws(lok$`Inkludert i eksperiment?`) == "Ja" ~ "green",
+  trimws(lok$Inkludert) == "Nei" ~ "red",
+  trimws(lok$Inkludert) == "Usikker" ~ "yellow",
+  trimws(lok$Inkludert) == "Overvåking" ~ "blue",
+  trimws(lok$Inkludert) == "Ja" ~ "green",
   TRUE ~ "grey"
 )
 
@@ -88,7 +86,6 @@ leaflet(lok) %>%
   addCircleMarkers(
     lng = ~lon,
     lat = ~lat,
-    #group = ~`Inkludert i eksperiment?`
     radius = 6,
     fillColor = ~pt_col,
     color = ~pt_col,
@@ -117,15 +114,28 @@ leaflet(lok) %>%
     ),
     options = layersControlOptions(collapsed = FALSE)
   ) %>%
-  addFullscreenControl()
+  addFullscreenControl(
+    position = "topright"
+  )
 ```
 
-## Tabell
+## Oppsummering antall
+
+```{r}
+lok %>% 
+  group_by(Inkludert) %>% 
+  summarize(Antall = n()) %>% 
+  kable()
+```
+
+
+
+## Lokalitetstabell
 
 ```{r, echo=F, warning=F, message=F}
-library(kableExtra)
+
 
 lok %>% 
-  select(2:4) %>% 
+  select(2:4, Inkludert) %>% 
   kable()
 ```
