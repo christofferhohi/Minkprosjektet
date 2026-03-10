@@ -54,7 +54,8 @@ lok <- read_excel("Lokalitetarv2.xlsx") %>%
    mutate(
     lat = as.numeric(lat),
     lon = as.numeric(lon)
-  )
+  ) %>% 
+  dplyr::filter(!is.na(Inkludert))
 
 
 lok$pt_col <- dplyr::case_when(
@@ -121,7 +122,7 @@ leaflet(lok) %>%
 
 ## Oppsummering antall
 
-```{r}
+```{r, echo = F}
 lok %>% 
   group_by(Inkludert) %>% 
   summarize(Antall = n()) %>% 
