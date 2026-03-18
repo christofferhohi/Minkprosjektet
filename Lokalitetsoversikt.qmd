@@ -129,8 +129,6 @@ lok %>%
   kable()
 ```
 
-
-
 ## Lokalitetstabell
 
 ```{r, echo=F, warning=F, message=F}
