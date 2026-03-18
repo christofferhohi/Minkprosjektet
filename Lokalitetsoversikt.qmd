@@ -59,7 +59,7 @@ lok$pt_col <- dplyr::case_when(
 )
 
 lok <- lok %>% 
-  dplyr::filter(Inkluder != "Nei")
+  dplyr::filter(Inkludert != "Nei")
 
 leaflet(lok) %>%
   # --- Base maps ---
