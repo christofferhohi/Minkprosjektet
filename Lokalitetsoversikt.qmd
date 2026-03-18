@@ -58,6 +58,9 @@ lok$pt_col <- dplyr::case_when(
   TRUE ~ "grey"
 )
 
+lok <- lok %>% 
+  dplyr::filter(Inkluder != "Nei")
+
 leaflet(lok) %>%
   # --- Base maps ---
   addTiles(group = "OSM") %>%   # OpenStreetMap
