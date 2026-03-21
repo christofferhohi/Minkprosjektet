@@ -41,6 +41,7 @@ layers <- layers[!is.na(layers) & nzchar(layers)]
 
 chosen_layer <- layers[1]  # topo layer
 
+# Locality data
 lok <- read_excel("Lokalitetarv2.xlsx") %>% 
   separate(Koordinater, into = c("lat", "lon"), sep = ",") %>% 
    mutate(
@@ -60,6 +61,13 @@ lok$pt_col <- dplyr::case_when(
 
 lok <- lok %>% 
   dplyr::filter(Inkludert != "Nei")
+
+# Camera positions
+viltkamera_coords <- st_read("Data/viltkamera.gpx", layer = "waypoints") %>% 
+  st_coordinates() %>% 
+  as.data.frame() %>% 
+  rename(lon = X, lat = Y)
+camera_icon <- makeIcon("Data/camera_icon.png")
 
 leaflet(lok) %>%
   # --- Base maps ---
@@ -92,6 +100,15 @@ leaflet(lok) %>%
       "<b>Vern:</b> ", Vernet
     )
   ) %>%
+  
+  # --- Camera positions ---
+  addMarkers(
+    data = viltkamera_coords,
+    lng = ~lon,
+    lat = ~lat,
+    icon = camera_icon,
+    group = "Viltkamera"
+  ) %>% 
   
   #--- Legend ---
   addLegend(
