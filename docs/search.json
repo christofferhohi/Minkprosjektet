@@ -18,7 +18,7 @@
     "href": "Lokalitetsoversikt.html#kart",
     "title": "Minkprosjektet",
     "section": "Kart",
-    "text": "Kart\nAktuelle koloniar er punktmarkert i kartet. Trykk på eit punkt for å få opp informasjon om lokalitetsnavn, koloninavn og vernestatus.\n\n\nReading layer `waypoints' from data source \n  `C:\\Users\\christoffer.hilde\\OneDrive - NINA\\Prosjekter\\SEAPOP\\Minkpredasjon\\R\\Lokaliteter\\Minkprosjektet\\Data\\viltkamera.gpx' \n  using driver `GPX'\nSimple feature collection with 15 features and 26 fields\nGeometry type: POINT\nDimension:     XY\nBounding box:  xmin: 5.71892 ymin: 59.75616 xmax: 5.970608 ymax: 60.19857\nGeodetic CRS:  WGS 84"
+    "text": "Kart\nAktuelle koloniar er punktmarkert i kartet. Trykk på eit punkt for å få opp informasjon om lokalitetsnavn, koloninavn og vernestatus.\n\n\nReading layer `waypoints' from data source \n  `C:\\Users\\christoffer.hilde\\OneDrive - NINA\\Prosjekter\\SEAPOP\\Minkpredasjon\\R\\Lokaliteter\\Minkprosjektet\\Data\\viltkamera.gpx' \n  using driver `GPX'\nSimple feature collection with 48 features and 26 fields\nGeometry type: POINT\nDimension:     XY\nBounding box:  xmin: 5.71892 ymin: 58.47028 xmax: 10.37694 ymax: 60.19857\nGeodetic CRS:  WGS 84"
   },
   {
     "objectID": "Lokalitetsoversikt.html#oppsummering-antall",
