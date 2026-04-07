@@ -152,3 +152,5 @@ lok %>%
 ```
 
 ## Grunneigarar
+
+Liste over grunneigarar: to-do
