@@ -14,7 +14,7 @@ Minkprosjektet er eit 4-årig eksperiment med mål om å 1) dokumentere effekten
 
 Aktuelle koloniar er punktmarkert i kartet. Trykk på eit punkt for å få opp informasjon om lokalitetsnavn, koloninavn og vernestatus.
 
-```{r message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, }
 #| echo: false
 library(tidyverse)
 library(readxl)
@@ -63,7 +63,7 @@ lok <- lok %>%
   dplyr::filter(Inkludert != "Nei")
 
 # Camera positions
-viltkamera_coords <- st_read("Data/viltkamera.gpx", layer = "waypoints") %>% 
+viltkamera_coords <- st_read("Data/viltkamera.gpx", layer = "waypoints", quiet = TRUE) %>% 
   st_coordinates() %>% 
   as.data.frame() %>% 
   rename(lon = X, lat = Y)
