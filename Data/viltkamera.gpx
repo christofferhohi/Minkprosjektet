@@ -4,8 +4,8 @@
     <link href="http://www.garmin.com">
       <text>Garmin International</text>
     </link>
-    <time>2026-03-28T09:27:32Z</time>
-    <bounds maxlat="60.198572007939219" maxlon="10.376941971480846" minlat="58.470275960862637" minlon="5.718919979408383" />
+    <time>2026-04-09T06:39:04Z</time>
+    <bounds maxlat="60.812125978991389" maxlon="10.376941971480846" minlat="58.470275960862637" minlon="4.807941969484091" />
   </metadata>
 
   <wpt lat="59.244275987148285" lon="10.376698980107903">
@@ -504,6 +504,44 @@
     </extensions>
   </wpt>
 
+  <wpt lat="60.811938978731632" lon="4.855078021064401">
+    <ele>-1.679585</ele>
+    <time>2026-04-07T10:50:41Z</time>
+    <name>ME-27</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T10:50:41Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.811977032572031" lon="4.855154966935515">
+    <ele>-2.066916</ele>
+    <time>2026-04-07T10:42:55Z</time>
+    <name>ME-28</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T10:42:55Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
   <wpt lat="59.756605988368392" lon="5.851936005055904">
     <ele>-9.274397</ele>
     <time>2026-03-19T11:14:22Z</time>
@@ -732,6 +770,291 @@
     </extensions>
   </wpt>
 
+  <wpt lat="60.812125978991389" lon="4.855041978880763">
+    <ele>-1.9653</ele>
+    <time>2026-04-07T10:30:47Z</time>
+    <name>ME-41</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T10:30:47Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.812064036726952" lon="4.854822037741542">
+    <ele>-1.688224</ele>
+    <time>2026-04-07T10:16:54Z</time>
+    <name>ME-42</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T10:16:54Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.624737972393632" lon="4.807941969484091">
+    <ele>-6.822558</ele>
+    <time>2026-04-07T18:29:03Z</time>
+    <name>ME-60</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T18:29:03Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.624838974326849" lon="4.807943981140852">
+    <ele>-6.254791</ele>
+    <time>2026-04-07T18:40:01Z</time>
+    <name>ME-61</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T18:40:01Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.585398012772202" lon="4.828921034932137">
+    <ele>5.343921</ele>
+    <time>2026-04-08T06:52:43Z</time>
+    <name>ME-62</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T06:52:43Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.585556011646986" lon="4.828616017475724">
+    <ele>5.23796</ele>
+    <time>2026-04-08T07:18:09Z</time>
+    <name>ME-63</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T07:18:09Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.35075300373137" lon="5.18176001496613">
+    <ele>-5.808396</ele>
+    <time>2026-04-08T10:00:32Z</time>
+    <name>ME-64</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T10:00:32Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.350718973204494" lon="5.181704023852944">
+    <ele>-5.126967</ele>
+    <time>2026-04-08T10:08:02Z</time>
+    <name>ME-65</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T10:08:02Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.27295502834022" lon="5.220846002921462">
+    <ele>-0.77578</ele>
+    <time>2026-04-08T12:18:50Z</time>
+    <name>ME-66</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T12:18:50Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.273005990311503" lon="5.220737038180232">
+    <ele>-2.775445</ele>
+    <time>2026-04-08T12:25:44Z</time>
+    <name>ME-67</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T12:25:44Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.268681012094021" lon="5.21912201307714">
+    <ele>-5.231897</ele>
+    <time>2026-04-08T12:51:25Z</time>
+    <name>ME-68</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T12:51:25Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.268777990713716" lon="5.219061998650432">
+    <ele>-8.461385999999999</ele>
+    <time>2026-04-08T13:01:40Z</time>
+    <name>ME-69</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T13:01:40Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.268780002370477" lon="5.218801992014051">
+    <ele>-9.435053</ele>
+    <time>2026-04-08T13:11:24Z</time>
+    <name>ME-70</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T13:11:24Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.268841022625566" lon="5.219012964516878">
+    <ele>-9.232082</ele>
+    <time>2026-04-08T13:18:09Z</time>
+    <name>ME-71</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T13:18:09Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.268716970458627" lon="5.218810038641095">
+    <ele>-3.364388</ele>
+    <time>2026-04-08T12:41:10Z</time>
+    <name>ME-T-100</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T12:41:10Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
   <wpt lat="59.24424396827817" lon="10.376941971480846">
     <ele>91.995255</ele>
     <time>2026-03-25T11:29:11Z</time>
@@ -918,6 +1241,82 @@
       </wptx1:WaypointExtension>
       <ctx:CreationTimeExtension>
         <ctx:CreationTime>2026-03-20T13:30:24Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.811863960698247" lon="4.85522897914052">
+    <ele>-0.483645</ele>
+    <time>2026-04-07T10:01:45Z</time>
+    <name>ME-T-91</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T10:01:45Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.350745962932706" lon="5.181837966665626">
+    <ele>-4.078545</ele>
+    <time>2026-04-08T09:49:27Z</time>
+    <name>ME-T-97</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T09:49:27Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.272963996976614" lon="5.220778025686741">
+    <ele>4.251456</ele>
+    <time>2026-04-08T12:06:21Z</time>
+    <name>ME-T-98</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-08T12:06:21Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="60.624791029840708" lon="4.807995026931167">
+    <ele>-6.354465</ele>
+    <time>2026-04-07T18:14:08Z</time>
+    <name>ME-T-99</name>
+    <sym>Furbearer</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2026-04-07T18:14:08Z</ctx:CreationTime>
       </ctx:CreationTimeExtension>
     </extensions>
   </wpt>
