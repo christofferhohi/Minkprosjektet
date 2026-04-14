@@ -157,8 +157,8 @@ Tabell viser ca. dato for overvaking av hekkebestand og -suksess med drone.
 
 | Region     | Hekkebestand | Hekkesuksess |
 |------------|--------------|--------------|
-| Sør-Noreg  | 1. juni      | 1. juli      |
-| Nord-Noreg | 7. juni      | 7. juli      |
+| Sør-Noreg  | 1\. juni     | 1\. juli     |
+| Nord-Noreg | 7\. juni     | 7\. juli     |
 
 ## Grunneigarar
 
