@@ -42,7 +42,7 @@ layers <- layers[!is.na(layers) & nzchar(layers)]
 chosen_layer <- layers[1]  # topo layer
 
 # Locality data
-lok <- read_excel("Lokalitetarv2.xlsx") %>% 
+lok <- read_excel("Lokalitetarv3.xlsx") %>% 
   separate(Koordinater, into = c("lat", "lon"), sep = ",") %>% 
    mutate(
     lat = as.numeric(lat),
@@ -52,15 +52,10 @@ lok <- read_excel("Lokalitetarv2.xlsx") %>%
 
 
 lok$pt_col <- dplyr::case_when(
-  trimws(lok$Inkludert) == "Nei" ~ "red",
-  trimws(lok$Inkludert) == "Usikker" ~ "yellow",
   trimws(lok$Inkludert) == "Overvåking" ~ "blue",
-  trimws(lok$Inkludert) == "Ja" ~ "green",
+  trimws(lok$Inkludert) == "Eksperiment" ~ "green",
   TRUE ~ "grey"
 )
-
-lok <- lok %>% 
-  dplyr::filter(Inkludert != "Nei")
 
 # Camera positions
 viltkamera_coords <- st_read("Data/viltkamera.gpx", layer = "waypoints", quiet = TRUE) %>% 
@@ -113,9 +108,9 @@ leaflet(lok) %>%
   #--- Legend ---
   addLegend(
   "bottomright",
-  colors = c("red", "yellow", "blue", "green"),
-  labels = c("Nei", "Usikker", "Overvåking", "Ja"),
-  title = "Inkludert i eksperiment?"
+  colors = c("blue", "green"),
+  labels = c("Overvåking", "Eksperiment"),
+  title = "Kategori"
 ) %>% 
 
   # --- Layer control ---
